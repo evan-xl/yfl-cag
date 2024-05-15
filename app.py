@@ -9,3 +9,13 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return app.send_static_file("index.html")
+
+@app.route('/foo')
+def foo():
+    return '<h1>Milky Dog</h1>'
+
+@app.route('/user/<username>')
+def user(username: str):
+    return f"<p>You are {username}</p>"
+
+
