@@ -12,7 +12,7 @@ def hello():
 
 @app.route('/foo')
 def foo():
-    return '<h1>Milky Dog</h1>'
+    return '<h1>Milky Boge</h1>'
 
 @app.route('/user/<username>')
 def user(username: str):
